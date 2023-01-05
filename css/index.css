@@ -107,3 +107,64 @@ body {
 
   color: #9da4bd;
 }
+
+
+/* ==============================ABOUT========================== */
+
+.about-top-text {
+  font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.33;
+    
+  
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  
+    color: #303030;
+}
+
+.about-title {
+  font-family: 'Raleway', sans-serif;
+  
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+  
+    color: #303030;
+}
+
+.about-bottom-text {
+  font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+  
+  
+    letter-spacing: 0.02em;
+  
+    color: #555555;
+}
+
+.about-text {
+  
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.86;
+    
+  
+    letter-spacing: 0.02em;
+  
+    color: #555555;
+}
+
+.about-btn {
+  font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+  
+    color: #303030;
+}
