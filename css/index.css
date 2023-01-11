@@ -1,5 +1,11 @@
 :root{
   --main-color: #ffffff;
+  --main-title-color:#ffffff;
+  --main-btn-color:#7fffd4;
+  --second-title-color: #808080; 
+  --second-btn-color:#4058ae;
+  --accent-color:#FF6C00;
+
 
 
 
@@ -13,13 +19,13 @@
 
 body {
   font-family: "Open Sans" Verdana;
-  color: aquamarine;
+  color: #7fffd4;
 }
 
 /* =============================HEADER======================= */
 
 .header {
-    background-color: grey;
+    background-color: #808080;
 }
 
 .hero-link {
@@ -45,7 +51,7 @@ body {
 
 .header-link:hover,
 .header-link:focus {
-  color: #ff6c00;
+  color: var(--accent-color);
 }
 
 .list {
@@ -70,14 +76,14 @@ body {
 
 .hero-link:hover,
 .hero-link:focus {
-  color: #ff6c00;
+  color: var(--accent-color);
 }
 
 /* =========================================HERO===================================================== */
 
 
 .hero{
-    background-color: #4058ae;
+    background-color: var(--second-btn-color);
 }
 
 .hero-top-text {
@@ -88,7 +94,7 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 
-  color: rgba(157, 164, 189, 0.6);
+  color: #9da4bd99;
 }
 
 .hero-title {
