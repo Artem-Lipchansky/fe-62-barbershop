@@ -1,3 +1,16 @@
+:root{
+  --main-color: #ffffff;
+
+
+
+  --typical-lh: 1.36;
+  --midle-lh: 1.33;
+}
+
+
+
+
+
 body {
   font-family: "Open Sans" Verdana;
   color: aquamarine;
@@ -12,7 +25,7 @@ body {
 .hero-link {
    font-weight: 600;
   font-size: 11px;
-  line-height: 1.33;
+  line-height: var(--typical-lh);
   letter-spacing: 0.2em;
 
   color: #303030;
@@ -24,10 +37,10 @@ body {
 .header-tel {
   font-weight: 600;
   font-size: 12px;
-  line-height: 1.33;
+  line-height: var(--typical-lh);
   letter-spacing: 0.1em;
 
-  color: #ffffff;
+  color: var(--main-color);
 }
 
 .header-link:hover,
@@ -46,23 +59,14 @@ body {
 .header-btn {
   font-weight: 600;
   font-size: 12px;
-  line-height: 1.33;
+  line-height: var(--midle-lh);
   letter-spacing: 0.09em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--main-color);
 }
 
-.header.btn {
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
 
-  color: #ffffff;
-}
 
 .hero-link:hover,
 .hero-link:focus {
@@ -79,7 +83,7 @@ body {
 .hero-top-text {
   font-weight: 600;
   font-size: 11px;
-  line-height: 1.33;
+  line-height: var(--midle-lh);
 
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -96,7 +100,7 @@ body {
 
   letter-spacing: 0.05em;
 
-  color: #ffffff;
+  color: var(--main-color);
 }
 
 .hero-bottom-text {
@@ -160,13 +164,69 @@ body {
 }
 
 .about-btn {
+  font-family: inherit;
   font-weight: 600;
     font-size: 12px;
-    line-height: 1.33;
+    line-height: var(--midle-lh);
     letter-spacing: 0.09em;
     text-transform: uppercase;
-  
+    cursor: pointer;
     color: #303030;
 }
 
 /* ======================PRICES========================= */
+
+.prices {
+  background-color: #4058ae;
+}
+
+.prices-top-text {
+  font-weight: 600;
+    font-size: 11px;
+    line-height: var(--typical-lh);
+   
+  
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  
+    color: rgba(157, 164, 189, 0.6);
+}
+
+.prices-title {
+  font-family: 'Raleway' sans-serif;
+    font-style: normal;
+    
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+  
+    color: var(--main-color);
+}
+
+.prices-list {}
+
+.list {}
+
+.prices-item {}
+
+.prices-item-text {
+  
+font-size: 18px;
+line-height: 1.67;
+letter-spacing: 0.02em;
+color: #9DA4BD;
+} 
+
+.prices-btn{
+  
+    font-weight: 600;
+    font-size: 12px;
+    line-height: var(--midle-lh);
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+  
+    color: var(--main-color);
+}
+
+
+ 
