@@ -235,4 +235,64 @@ color: #9DA4BD;
 }
 
 
+/* =====================================BENEFITS=========================== */
+
+
+ .benefits-list {}
+
+
+
+ .benefits-item span{
  
+    font-weight: 700;
+      font-size: 42px;
+      line-height: 57px;
+      text-align: center;
+      letter-spacing: 0.05em;
+    
+      color: #303030;
+ }
+
+ .benefits-item-text {
+  font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: var(--typical-lh);
+    text-align: center;
+  
+    color: #303030;
+ }
+
+ .benefits-top-text {
+  
+    font-size: 11px;
+    line-height: var(--typical-lh);
+    
+  
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  
+    color: #303030;
+ }
+
+ .benefits-title {
+  font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+  
+    color: #303030;
+ }
+
+ .benefits-bottom-text {
+  font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    
+  
+    letter-spacing: 0.02em;
+  
+    color: #555555;
+ }
