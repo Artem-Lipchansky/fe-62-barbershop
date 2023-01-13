@@ -296,3 +296,58 @@ color: #9DA4BD;
   
     color: #555555;
  }
+
+
+ /* ===================================BARBERS========================== */
+
+ .barbers-top-text {
+  font-weight: 600;
+    font-size: 11px;
+    line-height: var(--typical-lh);
+   
+  
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  
+    color: #303030;
+ }
+
+ .barbers-title {
+  font-family: 'Raleway' sans-serif;
+   
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+  
+    color: #303030;
+ }
+
+ .barbers-list {}
+
+ 
+
+ .barbers-item {}
+
+ .barbers-item-title {
+  font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    
+  
+    text-align: center;
+    letter-spacing: 0.02em;
+  
+    color: #303030;
+ }
+
+ .barbers-item-text {
+  font-size: 14px;
+    line-height: 1.35;
+    
+  
+    text-align: center;
+    letter-spacing: 0.02em;
+  
+    color: var(--accent-color);
+ }
