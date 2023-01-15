@@ -22,6 +22,31 @@ body {
   color: #7fffd4;
 }
 
+.btn{
+  font-family: inherit;
+  font-weight: 600;
+    font-size: 12px;
+    line-height: var(--midle-lh);
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+   cursor: pointer;
+
+    
+    
+}
+
+
+.section-title{
+  font-family: "Raleway";
+  
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.18;
+  
+    letter-spacing: 0.05em;
+
+}
+
 /* =============================HEADER======================= */
 
 .header {
@@ -63,12 +88,6 @@ body {
 }
 
 .header-btn {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: var(--midle-lh);
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-
   color: var(--main-color);
 }
 
@@ -98,13 +117,7 @@ body {
 }
 
 .hero-title {
-  font-family: "Raleway";
-
-  font-weight: 700;
-  font-size: 72px;
-  line-height: 1.18;
-
-  letter-spacing: 0.05em;
+ 
 
   color: var(--main-color);
 }
@@ -170,13 +183,7 @@ body {
 }
 
 .about-btn {
-  font-family: inherit;
-  font-weight: 600;
-    font-size: 12px;
-    line-height: var(--midle-lh);
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-    cursor: pointer;
+
     color: #303030;
 }
 
@@ -225,11 +232,7 @@ color: #9DA4BD;
 
 .prices-btn{
   
-    font-weight: 600;
-    font-size: 12px;
-    line-height: var(--midle-lh);
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
+ 
   
     color: var(--main-color);
 }
