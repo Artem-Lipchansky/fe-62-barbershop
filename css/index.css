@@ -22,6 +22,20 @@ body {
   color: #7fffd4;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .btn{
   font-family: inherit;
   font-weight: 600;
@@ -45,6 +59,15 @@ body {
   
     letter-spacing: 0.05em;
 
+}
+
+.top-text{
+font-weight: 600;
+  font-size: 11px;
+  line-height: var(--midle-lh);
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 /* =============================HEADER======================= */
@@ -106,12 +129,7 @@ body {
 }
 
 .hero-top-text {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: var(--midle-lh);
-
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+ 
 
   color: #9da4bd99;
 }
@@ -135,14 +153,7 @@ body {
 /* ==============================ABOUT========================== */
 
 .about-top-text {
-  font-style: normal;
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.33;
-    
   
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
   
     color: #303030;
 }
@@ -194,24 +205,13 @@ body {
 }
 
 .prices-top-text {
-  font-weight: 600;
-    font-size: 11px;
-    line-height: var(--typical-lh);
-   
-  
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+ 
   
     color: rgba(157, 164, 189, 0.6);
 }
 
 .prices-title {
-  font-family: 'Raleway' sans-serif;
-    font-style: normal;
-    
-    font-size: 42px;
-    line-height: 1.17;
-    letter-spacing: 0.05em;
+ 
   
     color: var(--main-color);
 }
@@ -268,23 +268,13 @@ color: #9DA4BD;
 
  .benefits-top-text {
   
-    font-size: 11px;
-    line-height: var(--typical-lh);
     
-  
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
   
     color: #303030;
  }
 
  .benefits-title {
-  font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 1.16;
-    letter-spacing: 0.05em;
+ 
   
     color: #303030;
  }
@@ -304,13 +294,7 @@ color: #9DA4BD;
  /* ===================================BARBERS========================== */
 
  .barbers-top-text {
-  font-weight: 600;
-    font-size: 11px;
-    line-height: var(--typical-lh);
-   
   
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
   
     color: #303030;
  }
@@ -354,3 +338,22 @@ color: #9DA4BD;
   
     color: var(--accent-color);
  }
+
+ /* ======================GALLERY============================ */
+
+
+ .gallery-top-text{
+  color: #303030;
+ }
+
+ /* ======================ONLINE============================ */
+    .online{
+        color: #303030;
+    }
+
+        .online-title{
+          color: var(--main-title-color);
+        }
+ /* ======================CONTACTS========================== */
+
+ /* ======================FOOTER============================ */
