@@ -355,5 +355,89 @@ color: #9DA4BD;
           color: var(--main-title-color);
         }
  /* ======================CONTACTS========================== */
+.contacts{
+  background-color: #303030;
+}
 
+.contacts-title{
+  color: var(--main-title-color);
+}
+
+.contacts-addres{
+  font-style: normal;
+}
+
+.contacts-addres-link{
+  font-weight: 700;
+    font-size: 18px;
+    line-height: 1.67;
+   
+  
+    letter-spacing: 0.02em;
+  
+    color: #9DA4BD;
+}
+
+
+
+
+.contacts-link {
+  font-size: 1.67;
+    line-height: 30px;
+    
+  
+    letter-spacing: 0.02em;
+  
+    color: #9DA4BD;
+}
+
+.contacts-subtitle {
+  font-weight: 600;
+    font-size: 11px;
+    line-height: var(--typical-lh);
+   
+  
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  
+    color: #FFFFFF;
+}
+
+.contacts-schedule {
+  font-size: 18px;
+    line-height: 1.67;
+    
+  
+    letter-spacing: 0.02em;
+  
+    color: #9DA4BD;
+}
  /* ======================FOOTER============================ */
+
+ .footer-copy{
+font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+ 
+
+  letter-spacing: 0.2em;
+
+  color: #9DA4BD;
+ }
+
+ .footer-link{
+font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  
+
+  letter-spacing: 0.2em;
+
+  color: #303030;
+ }
+
+
+ .footer-link:hover,
+ .footer-link:focus {
+   color: var(--accent-color);
+ }
