@@ -65,6 +65,14 @@ body {
   overflow: hidden;
 }
 
+.container{
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid red;
+  margin: 0 auto;
+}
+
 
 /*======================================MAIN=============================================*/
 
@@ -106,6 +114,7 @@ font-weight: 600;
 
 .header {
     background-color: #808080;
+    padding-top: 32px;
 }
 
 .hero-link {
