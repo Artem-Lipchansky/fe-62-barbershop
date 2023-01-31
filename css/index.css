@@ -71,6 +71,8 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+
+
   outline: 2px solid red;
   margin: 0 auto;
 }
@@ -98,6 +100,8 @@ body {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+
+
 
 
 .section-title{
@@ -327,13 +331,20 @@ color: #9DA4BD;
  .benefits-list {}
 
 
+ .benefits-item{
+  width: 170px;
+  height: 133px;
+  border: 1px solid #000000;
+  padding: 20px 24px;
+  text-align: center;
+ }
 
  .benefits-item span{
  
     font-weight: 700;
       font-size: 42px;
       line-height: 57px;
-      text-align: center;
+      
       letter-spacing: 0.05em;
     
       color: #303030;
@@ -351,13 +362,13 @@ color: #9DA4BD;
 
  .benefits-top-text {
   
-    
+    margin-bottom: 20px;
   
     color: #303030;
  }
 
  .benefits-title {
- 
+    margin-bottom: 20px;
   
     color: #303030;
  }
