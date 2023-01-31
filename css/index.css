@@ -444,6 +444,7 @@ color: #9DA4BD;
   height: 44px;
   border-radius: 50%;
   background-color: #FF6C00;
+  display: block;
  }
 
  /* ======================GALLERY============================ */
