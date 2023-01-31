@@ -389,12 +389,18 @@ color: #9DA4BD;
 
  .barbers-top-text {
   
-  
+  margin-bottom: 20px;
     color: #303030;
  }
 
+ .barbers-item-content{
+  padding-top: 30px;
+ }
+
+
  .barbers-title {
   font-family: 'Raleway' sans-serif;
+  margin-bottom: 44px;
    
     font-weight: 700;
     font-size: 42px;
@@ -414,7 +420,7 @@ color: #9DA4BD;
   font-weight: 400;
     font-size: 18px;
     line-height: 25px;
-    
+    margin-bottom: 4px;
   
     text-align: center;
     letter-spacing: 0.02em;
@@ -425,12 +431,19 @@ color: #9DA4BD;
  .barbers-item-text {
   font-size: 14px;
     line-height: 1.35;
-    
+    margin-bottom: 30px;
   
     text-align: center;
     letter-spacing: 0.02em;
   
     color: var(--accent-color);
+ }
+
+ .barbers-soc-link{
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #FF6C00;
  }
 
  /* ======================GALLERY============================ */
