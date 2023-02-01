@@ -89,6 +89,12 @@ body {
     text-transform: uppercase;
    cursor: pointer;
 
+  border: 1px solid #FF6C00;
+    border-radius: 25px;
+    background-color: transparent;
+    min-width: 160px;
+    height: 40px;
+
     
     
 }
@@ -134,6 +140,7 @@ font-weight: 600;
 
 .header-list{
   display: flex;
+  gap: 30px;
 }
 
 .header-navigation{
@@ -190,6 +197,7 @@ font-weight: 600;
 
 .header-btn {
   color: var(--main-color);
+  margin-left: 40px;
 }
 
 
