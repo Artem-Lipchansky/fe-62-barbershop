@@ -132,6 +132,28 @@ font-weight: 600;
     padding-bottom: 32px;
 }
 
+.header-list{
+  display: flex;
+}
+
+.header-navigation{
+  display: flex;
+  align-items: center;
+}
+
+.header-container{
+  display: flex;
+  align-items: center;
+}
+
+.header-connect{
+  margin-left: auto;
+}
+
+.header-logo{
+  margin-right: 131px;
+}
+
 .hero-link {
    font-weight: 600;
   font-size: 11px;
