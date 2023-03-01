@@ -545,8 +545,35 @@ color: #9DA4BD;
   height: 44px;
   border-radius: 50%;
   background-color: #FF6C00;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill:#FFFFFF;
+
+ 
+
+
  }
+
+
+ 
+
+.barbers-soc-link:hover,
+.barbers-soc-link:focus {
+  background-color: #7fffd4;
+  fill: #4058ae;
+}
+
+  /*
+ .barbers-soc-link:hover, 
+ .barbers-soc-link:focus{
+  background-color: #7fffd4;
+ }
+
+ .barbers-soc-link:hover .barbers-soc-icon,
+ .barbers-soc-link:focus .barbers-soc-icon{
+   fill: rgb(255, 200, 140);
+ }*/
 
  /* ============================GALLERY=============================== */
 
