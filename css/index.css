@@ -257,9 +257,33 @@ font-weight: 600;
 
 .hero-title {
  
-
+font-size: 72px;
   color: var(--main-color);
   margin-bottom: 20px;
+  display: flex;
+  align-items: baseline;
+  flex-direction: row-reverse;
+  justify-content: start;
+}
+
+.hero-title::before {
+  content:  "";
+  color: brown;
+  width: 40px;
+  height: 40px;
+  background-color: #7fffd4;
+  background-image: url(../img/img2br.jpg);
+  background-size: cover;
+  
+}
+.hero-title:hover::before {
+ color: green;
+}
+
+
+
+.hero-title::after {
+  content: "!";
 }
 
 .hero-bottom-text {
