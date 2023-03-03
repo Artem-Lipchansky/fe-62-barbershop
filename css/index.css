@@ -130,6 +130,10 @@ font-weight: 600;
   text-transform: uppercase;
 }
 
+.top-text{
+  
+}
+
 /* ==========================================HEADER===================================== */
 
 .header {
@@ -262,17 +266,18 @@ font-size: 72px;
   margin-bottom: 20px;
   display: flex;
   align-items: baseline;
-  flex-direction: row-reverse;
-  justify-content: start;
+ /* flex-direction: row-reverse;
+  justify-content: start;*/
 }
 
 .hero-title::before {
-  content:  "";
+  content:  "\1F525";
   color: brown;
+  font-size: 40px;
   width: 40px;
   height: 40px;
-  background-color: #7fffd4;
-  background-image: url(../img/img2br.jpg);
+  /*background-color: #7fffd4;
+  background-image: url(../img/img2br.jpg);*/
   background-size: cover;
   
 }
