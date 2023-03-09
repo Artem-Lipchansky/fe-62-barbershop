@@ -128,9 +128,17 @@ font-weight: 600;
 
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  display: flex;
+  align-items:center;
+  gap:20px;
+
 }
 
-.top-text{
+.top-text::before{
+  content: '';
+  width: 60px;
+  height: 1px;
+  background-color:  rgba(157, 164, 189, 0.6);
   
 }
 
@@ -394,16 +402,33 @@ font-size: 72px;
     margin-bottom: 44px;
 }
 
+.prices-list:first-child{
+  background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.prices-list:last-child {
+  background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+
 .prices-list {
-  border: 1px solid #ffffff;
+  
   padding: 30px 20px;
 
-  width: calc((100%-30px) /2);
+  width: calc((100% - 30px) /2);
   
 
 }
 
 .list {}
+
+
+.prices-item::before{
+content: '';
+flex-grow: 1;
+height: 1px;
+background-color: #ffffff;
+
+}
 
 .prices-item {
   display: flex;
