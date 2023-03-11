@@ -422,11 +422,11 @@ font-size: 72px;
 .list {}
 
 
-.prices-item::before{
+.prices-item::after{
 content: '';
 flex-grow: 1;
 height: 1px;
-background-color: #ffffff;
+background-color: rgba(157, 164, 189, 0.12);
 
 }
 
@@ -434,11 +434,18 @@ background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  align-items: baseline;
+  gap:12px;
 }
 
 .prices-item:last-child{
   margin-bottom: 0;
 }
+
+.prices-item-text:last-child {
+  order:1;
+}
+
 .prices-item-text {
   
 font-size: 18px;
