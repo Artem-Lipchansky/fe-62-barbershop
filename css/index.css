@@ -659,7 +659,7 @@ color: #9DA4BD;
 
         .contact-container{
           display: flex;
-          
+          justify-content: space-between;
         }
 
 
@@ -668,6 +668,7 @@ color: #9DA4BD;
  /* ===========================ONLINE=============================== */
         .online {
           background-color: #000000;
+          width: calc(50% - 15px);
         }
 
         .online-title{
@@ -680,30 +681,38 @@ color: #9DA4BD;
  /* ===========================CONTACTS============================= */
 .contacts{
   background-color: #000000;
-  
+  width: calc(50% - 15px);
+  padding-left: 100px;
 }
 
 .contacts-title{
   color: var(--main-title-color);
-  
+  margin-bottom: 40px;
 }
 
 .contacts-addres{
   font-style: normal;
+  margin-bottom: 70px;
+}
+
+.contacts-item + .contacts-item{
+  margin-top: 20px;
 }
 
 .contacts-addres-link{
   font-weight: 700;
     font-size: 18px;
     line-height: 1.67;
-   
-  
+   margin-bottom: 20px;
+  display: block;
     letter-spacing: 0.02em;
   
     color: #9DA4BD;
 }
 
-
+.contact-wrap{
+  background-color: #303030;
+}
 
 
 .contacts-link {
@@ -720,7 +729,7 @@ color: #9DA4BD;
   font-weight: 600;
     font-size: 11px;
     line-height: var(--typical-lh);
-   
+    margin-bottom: 20px;
   
     letter-spacing: 0.1em;
     text-transform: uppercase;
