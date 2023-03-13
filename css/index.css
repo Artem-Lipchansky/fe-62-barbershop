@@ -474,13 +474,26 @@ color: #9DA4BD;
   flex-wrap: wrap;
  } 
 
+ .benefits-container{
+  display: flex;
+  padding-left: 100px;
+  gap:130px;
+ }
 
  .benefits-item{
   width: 170px;
   height: 133px;
-  border: 1px solid #000000;
+  background-color: #F7F7F7;
   padding: 20px 24px;
   text-align: center;
+ }
+
+ .benefits-item:nth-child(odd) {
+  margin-right: 30px;
+ }
+
+ .benefits-item:nth-child(even) {
+   margin-top: 30px;
  }
 
  .benefits-item span{
@@ -511,9 +524,14 @@ color: #9DA4BD;
     color: #303030;
  }
 
+ .benefits-content{
+  max-width: 500px;
+  padding-top: 9px;
+ }
+
  .benefits-title {
     margin-bottom: 20px;
-  
+    max-width: 430px;
     color: #303030;
  }
 
