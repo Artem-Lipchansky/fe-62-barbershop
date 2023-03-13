@@ -468,7 +468,11 @@ color: #9DA4BD;
 /* =====================================BENEFITS================================= */
 
 
- .benefits-list {}
+ .benefits-list {
+  display: flex;
+  width: 370px;
+  flex-wrap: wrap;
+ } 
 
 
  .benefits-item{
@@ -667,20 +671,20 @@ color: #9DA4BD;
 
  /* ===========================ONLINE=============================== */
         .online {
-          background-color: #000000;
+          
           width: calc(50% - 15px);
         }
 
         .online-title{
           color: var(--main-title-color);
 
-          background-color: #000000;
+          
 
           
         }
  /* ===========================CONTACTS============================= */
 .contacts{
-  background-color: #000000;
+ 
   width: calc(50% - 15px);
   padding-left: 100px;
 }
@@ -711,7 +715,14 @@ color: #9DA4BD;
 }
 
 .contact-wrap{
-  background-color: #303030;
+  background-color: #121c26;
+  background-image: url(../img/bg-contacts-min.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: calc(50% - 15px) 100%;
+  margin: 0 auto;
+  max-width: 1600px;
+
 }
 
 
