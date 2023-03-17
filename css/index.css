@@ -607,6 +607,17 @@ color: #9DA4BD;
   padding-top: 30px;
  }
 
+ .barbers-top-text{
+  position: absolute;
+  top: 0;
+  left: 0;
+  color:#ffffff;
+  font-weight: 600;
+  line-height: 1.6;
+  background-color: #ff6a0083;
+  padding:40px;
+  height: 346px;
+ }
 
  .barbers-title {
   font-family: 'Raleway' sans-serif;
@@ -645,6 +656,7 @@ color: #9DA4BD;
 
  .barbers-item {
   width: calc((100% - 60px)/3);
+  position: relative;
  }
 
  .barbers-item-title {
