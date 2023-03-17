@@ -99,6 +99,10 @@ body {
 }
 
 
+.btn:hover{
+  background-color: #FF6C00;
+}
+
 
 
 .section{
@@ -152,6 +156,10 @@ font-weight: 600;
 .header-list{
   display: flex;
   gap: 30px;
+}
+
+.header-tel:hover{
+  color: #FF6C00; 
 }
 
 .header-navigation{
