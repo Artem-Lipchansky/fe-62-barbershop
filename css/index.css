@@ -288,18 +288,22 @@ font-weight: 600;
 }
 
 .hero-list{
-  width: 100px;
+  
   display: flex;
   transform-origin: bottom left;
   transform: rotate(-90deg) translateY(100%);
+  align-items: center;
+  gap: 40px;
 
 }
 
 .hero-list::before {
-  content: '';
+  content: " ";
   width: 60px;
   height: 1px;
   background-color: #303030;
+  
+  
 
 }
 
