@@ -435,9 +435,12 @@
       <p class="modal-title">Enter the data</p>
 
        <form>
-        <input type="text" class="modal-input" placeholder="Enter a name">
-        <input type="text" class="modal-input" placeholder="Enter your mail">
-        <input type="text" class="modal-input" placeholder="Enter your phone number">
+        <input type="text" class="modal-input" name="user-name" required placeholder="Enter a name*">
+        <input type="text" class="modal-input" name="user-email" required placeholder="Enter your mail*">
+        <input type="text" class="modal-input" name="user-tel" required placeholder="Enter your phone number*">
+
+          <button type="submit">Send</button>
+
        </form>
 
     </div>
