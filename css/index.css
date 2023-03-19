@@ -932,3 +932,14 @@ font-weight: 600;
   pointer-events: none;
 }
 
+
+.modal{
+  padding: 40px;
+}
+
+.modal-title{
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  
+}
