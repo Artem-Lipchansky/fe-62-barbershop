@@ -819,6 +819,17 @@ color: #9DA4BD;
     color: #9DA4BD;
 }
 
+.contacts-addres-link:hover{
+  color: #FF6C00; 
+  transition: color 300ms linear, background-color 300ms linear;
+}
+
+.contacts-link:hover{
+  color: #FF6C00;
+  transition: color 300ms linear, background-color 300ms linear;
+}
+
+
 .contact-wrap{
   background-color: #121c26;
   background-image: url(../img/bg-contacts-min.png);
@@ -890,6 +901,7 @@ font-weight: 600;
  .footer-link:hover,
  .footer-link:focus {
    color: var(--accent-color);
+   transition: color 300ms linear, background-color 300ms linear;
  }
 
 
