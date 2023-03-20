@@ -173,6 +173,10 @@ font-weight: 600;
   color: #FF6C00; 
 }
 
+.header-tel, .hero-link {
+  transition: color 300ms linear;
+}
+
 .header-navigation{
   display: flex;
   align-items: center;
@@ -654,7 +658,7 @@ color: #9DA4BD;
 
 
  .barbers-soc-item{
-  
+ 
  }
 
 
@@ -705,6 +709,8 @@ color: #9DA4BD;
   align-items: center;
   justify-content: center;
   fill:#FFFFFF;
+ 
+  
 
  
 
@@ -712,13 +718,17 @@ color: #9DA4BD;
  }
 
 
- 
 
 .barbers-soc-link:hover,
 .barbers-soc-link:focus {
   background-color: #685f5f;
   fill: #000000;
+
+ 
 }
+
+
+
 
   /*
  .barbers-soc-link:hover, 
