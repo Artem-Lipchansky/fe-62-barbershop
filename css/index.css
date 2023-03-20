@@ -711,7 +711,7 @@ color: #9DA4BD;
   fill:#FFFFFF;
  
   
-
+  transition: color 300ms linear, background-color 300ms linear;
  
 
 
@@ -724,7 +724,7 @@ color: #9DA4BD;
   background-color: #685f5f;
   fill: #000000;
 
- 
+  transition: color 300ms linear, fill 300ms linear;
 }
 
 
