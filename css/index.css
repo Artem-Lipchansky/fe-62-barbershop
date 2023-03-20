@@ -974,10 +974,10 @@ font-weight: 600;
 
 }
 
-.modal-input:valid:not(:placeholder-shown):valid{
+.modal-input:not(:focus):not(:placeholder-shown):valid{
   background-color: #FF6C00;
 }
 
-.modal-input:invalid{
+.modal-input:not(:focus):not(:placeholder-shown):invalid {
   background-color: #4058ae
 }
