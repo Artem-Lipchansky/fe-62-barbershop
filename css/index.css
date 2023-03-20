@@ -973,3 +973,11 @@ font-weight: 600;
   color: #4058ae;
 
 }
+
+.modal-input:valid:not(:placeholder-shown):valid{
+  background-color: #FF6C00;
+}
+
+.modal-input:invalid{
+  background-color: #4058ae
+}
