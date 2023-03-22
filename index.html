@@ -442,13 +442,24 @@
         <label for="user-email" class="modal-label">Enter your email*</label>
         
         <input type="text" class="modal-input" name="user-email" required placeholder="artemius@gmail*" id="user-email"/></div>
-        <input type="text" class="modal-input" name="user-tel" title="+380 (96) 111-11-11" pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required placeholder="Enter your phone number*"/>
+        <input type="text" class="modal-input" name="user-tel" title="+380 (960) 111-11-11" pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required value="+380" placeholder="Enter your phone number*"/>
         
 
         <div class="modal-field">
           <label for="user-text" class="modal-label">Enter a comment</label>
           <textarea name="user-email" id="user-text" class="modal-comment" placeholder="Comment"></textarea>
           </div>
+
+          <fieldset>
+            <legend>
+              Size
+            </legend>
+            <label for="big">big</label>
+            <input type="radio" id="big" name="big" value="big">
+
+            <label for="small">small</label>
+            <input type="radio" id="small" name="big" value="small">
+          </fieldset>
           <button type="submit">Send</button>
 
        </form>
