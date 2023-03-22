@@ -981,10 +981,10 @@ font-weight: 600;
   height: 45px;
   border:1px solid #303030;
   border-radius: 5px;
-  margin-bottom: 15px;
+ 
   font-size: 13px;
   color: #7fffd4;
-  padding-left: 10px;
+  padding-left: 35px;
 
 }
 
@@ -1019,3 +1019,24 @@ font-weight: 600;
   resize: none;
   padding: 10px;
 }
+
+
+
+.input-wrap{
+  position: relative;
+  
+ 
+}
+
+.modal-input-icon{
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  left: 5px;
+}
+
+
+.modal-field{
+  margin-bottom: 15px;
+}
+
