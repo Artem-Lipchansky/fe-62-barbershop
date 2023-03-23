@@ -985,6 +985,11 @@ font-weight: 600;
   font-size: 13px;
   color: #7fffd4;
   padding-left: 35px;
+  outline: transparent;
+}
+
+.modal-input:focus{
+border: 1px solid #FF6C00;
 
 }
 
