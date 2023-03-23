@@ -993,6 +993,10 @@ border: 1px solid #FF6C00;
 
 }
 
+.modal-input:focus + .modal-input-icon{
+fill: #FF6C00;
+}
+
 
 
 .modal-input::placeholder, 
@@ -1004,6 +1008,23 @@ border: 1px solid #FF6C00;
 
 .modal-input:not(:focus):not(:placeholder-shown):valid{
   background-color: #FF6C00;
+}
+
+
+.check-text{
+  font-size: 14px;
+  color: #555555;
+  display: flex;
+  align-items: center;
+}
+
+.check-text::before{
+content: '';
+width: 16px;
+height: 15px;
+border: 2px solid #000000;
+border-radius: 2px;
+margin-right: 5px;
 }
 
 .modal-input:not(:focus):not(:placeholder-shown):invalid {
