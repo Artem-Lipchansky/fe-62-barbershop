@@ -1018,6 +1018,7 @@ fill: #FF6C00;
   align-items: center;
 }
 
+
 .check-text::before{
 content: '';
 width: 16px;
@@ -1027,8 +1028,18 @@ border-radius: 2px;
 margin-right: 5px;
 }
 
+
+.input-check:checked + .check-text::before{
+  background-color: #FF6C00;
+  background-image: url(../img/check-new.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-color: transparent;
+}
+
 .modal-input:not(:focus):not(:placeholder-shown):invalid {
-  background-color: #4058ae
+  background-color: #4058ae;
+  
 }
 
 
