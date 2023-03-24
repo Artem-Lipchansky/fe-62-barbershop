@@ -1018,7 +1018,42 @@ fill: #FF6C00;
   align-items: center;
 }
 
+.check-text span{
 
+  content: '';
+width: 16px;
+height: 15px;
+border: 2px solid #000000;
+border-radius: 2px;
+margin-right: 5px;
+display: flex;
+align-items: center;
+justify-content: center;
+fill:transparent;
+
+}
+
+
+.input-check:checked + .check-text span{
+background-color: #FF6C00;
+border-color: transparent;
+fill:#ffffff;
+}
+
+.input-check:focus + .check-text span{
+  
+  border-color: var(--accent-color);
+  
+  }
+
+  .input-check:hover + .check-text span{
+  
+    border-color: var(--accent-color);
+    
+    }
+
+
+/*
 .check-text::before{
 content: '';
 width: 16px;
@@ -1036,6 +1071,8 @@ margin-right: 5px;
   background-repeat: no-repeat;
   border-color: transparent;
 }
+
+*/
 
 .modal-input:not(:focus):not(:placeholder-shown):invalid {
   background-color: #4058ae;
