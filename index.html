@@ -484,10 +484,10 @@
             
 
             <label for="privacy" class="check-text" >
-              <!--<span>
+              <span>
               <svg class="check-icon" width="16" height="15" >
                 <use href="./img/symbol-defs.svg#icon-check-new"></use>
-              </svg></span>-->
+              </svg></span>
                 Policy-uses
             </label>
           </div>
@@ -519,7 +519,13 @@
             <option value="london">London</option>
             <option value="new-selected">New-Selected</option>
           </select>-->
-          <button type="submit">Send</button>
+          <!--<button type="submit">Send</button>-->
+
+          <ul class="filter-list">
+            <li><input type="radio" name="filter" id="filter" class="filter-btn"><label for="All"></label></li>
+            <li><input type="radio" name="filter" id="filter" class="filter-btn"><label for="Aps"></label></li>
+            <li><input type="radio" name="filter" id="filter" class="filter-btn"><label for="Design"></label></li>
+          </ul>
 
        </form>
 

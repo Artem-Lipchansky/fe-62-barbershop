@@ -1019,6 +1019,9 @@ fill: #FF6C00;
   position: relative;
 }
 
+
+/*
+
 .check-text::before{
 content: '';
 width: 40px;
@@ -1055,9 +1058,9 @@ transition:  background-color 250ms linear;
     background-color: #b31818;
 
   }
+*/
 
 
-/*
 
 .check-text span{
 
@@ -1091,7 +1094,7 @@ fill:#ffffff;
   
     border-color: var(--accent-color);
     
-    }*/
+    }
 
 
 /*
@@ -1133,6 +1136,7 @@ margin-right: 5px;
   border: 1px solid #555555;
   resize: none;
   padding: 10px;
+  border-radius: 5px;
 }
 
 
