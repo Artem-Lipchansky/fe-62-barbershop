@@ -1096,6 +1096,25 @@ fill:#ffffff;
     
     }
 
+    .filter-text{
+      background-color: antiquewhite;
+      padding: 6px 22px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .filter-list{
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .filter-btn:checked + .filter-text{
+background-color: darkslateblue;
+color: #ffffff;
+cursor: pointer;
+    }
+
 
 /*
 .check-text::before{
