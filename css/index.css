@@ -784,7 +784,24 @@ color: #9DA4BD;
           
         }
 
+          .online-label{
+            position: absolute;
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 1.36;
+            
+            
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            
+            color: rgba(157, 164, 189, 0.4);
+          }
 
+
+          .online-input-wrap{
+            position: relative;
+            
+          }
 
 
         .online-form {
@@ -811,12 +828,12 @@ color: #9DA4BD;
 
         }
 
-        .online-item:focus::placeholder{
+       /* .online-item:focus::placeholder{
           color: #ffffff;
         }
 
 
-        .online-item::placeholder{
+        .online-item::placeholder {
           font-weight: 600;
           font-size: 11px;
           line-height: 1.36;
@@ -826,7 +843,7 @@ color: #9DA4BD;
           text-transform: uppercase;
           
           color: rgba(157, 164, 189, 0.4);
-        }
+        }*/
 
         .online-text {
           width: 100%;
