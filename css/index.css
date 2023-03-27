@@ -794,7 +794,7 @@ color: #9DA4BD;
             
             letter-spacing: 0.1em;
             text-transform: uppercase;
-            transition: transform 250;
+            transition: transform 250ms linear;
             color: rgba(157, 164, 189, 0.4);
           }
 
@@ -835,7 +835,10 @@ color: #9DA4BD;
         }
 
 
-        .online-item:focus + .online-label{
+        
+
+        .online-item:focus  + .online-label,
+         .online-item:not(:placeholder-shown) + .online-label{
           transform: translateY(-100%);
         }
 
