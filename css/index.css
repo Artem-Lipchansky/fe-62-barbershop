@@ -803,11 +803,16 @@ color: #9DA4BD;
           border: none;
           border-bottom: 1px solid rgba(157, 164, 189, 0.4);
           outline: transparent;
+          color: #ffffff;
         }
 
         .online-item:focus{
           border-color:#ffffff;
 
+        }
+
+        .online-item:focus::placeholder{
+          color: #ffffff;
         }
 
 
@@ -829,9 +834,9 @@ color: #9DA4BD;
           margin-bottom: 44px;
           resize: none;
         }
-        .btn {
-        }
+        
         .online-btn {
+          color: var(--main-btn-color);
         }
  /* ===========================CONTACTS============================= */
 .contacts{
