@@ -789,7 +789,8 @@ color: #9DA4BD;
             font-weight: 600;
             font-size: 11px;
             line-height: 1.36;
-            
+            top:0;
+            left:0;
             
             letter-spacing: 0.1em;
             text-transform: uppercase;
@@ -801,6 +802,11 @@ color: #9DA4BD;
           .online-input-wrap{
             position: relative;
             
+          }
+
+          .online-area-wrap{
+            width: 100%;
+            position: relative;
           }
 
 
@@ -823,7 +829,7 @@ color: #9DA4BD;
           color: #ffffff;
         }
 
-        .online-item:focus{
+        .online-item:focus + .online-label{
           border-color:#ffffff;
 
         }
