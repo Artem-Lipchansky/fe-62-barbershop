@@ -796,16 +796,38 @@ color: #9DA4BD;
         .online-input {
           width: 270px;
           height: 24px;
+          margin-bottom: 44px;
         }
         .online-item {
           background-color: transparent;
           border: none;
           border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+          outline: transparent;
         }
+
+        .online-item:focus{
+          border-color:#ffffff;
+
+        }
+
+
+        .online-item::placeholder{
+          font-weight: 600;
+          font-size: 11px;
+          line-height: 1.36;
+          
+          
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          
+          color: rgba(157, 164, 189, 0.4);
+        }
+
         .online-text {
           width: 100%;
           height: 76px;
           margin-bottom: 44px;
+          resize: none;
         }
         .btn {
         }
