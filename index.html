@@ -386,12 +386,16 @@
 
 
 <form  class="online-form">
-  <label for="online-name">Name*</label>
+  <div class="online-input-wrap">
+    <label for="online-name">Name*</label>
   <input type="text" class="online-input online-item" name="online-name" id="online-name" placeholder=""/>
-  <label for="online-tel">Phone*</label>
-  <input type="tel" class="online-input online-item" name="online-tel" id="online-tel" placeholder=""/>
-  <label for="online-mess">Message</label>
-  <textarea name="online-mess" class="online-text online-item" placeholder="" id="online-mess"></textarea>
+  </div>
+  <div class="online-input-wrap"><label for="online-tel">Phone*</label>
+    <input type="tel" class="online-input online-item" name="online-tel" id="online-tel" placeholder=""/></div>
+  
+    <div class="online-input-wrap"><label for="online-mess">Message</label>
+      <textarea name="online-mess" class="online-text online-item" placeholder="" id="online-mess"></textarea></div>
+  
   
   <button type="submit" class="btn online-btn">Send</button>
 </form>
