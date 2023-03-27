@@ -794,7 +794,7 @@ color: #9DA4BD;
             
             letter-spacing: 0.1em;
             text-transform: uppercase;
-            
+            transition: transform 250;
             color: rgba(157, 164, 189, 0.4);
           }
 
@@ -829,9 +829,14 @@ color: #9DA4BD;
           color: #ffffff;
         }
 
-        .online-item:focus + .online-label{
+        .online-item:focus {
           border-color:#ffffff;
 
+        }
+
+
+        .online-item:focus + .online-label{
+          transform: translateY(-100%);
         }
 
        /* .online-item:focus::placeholder{
