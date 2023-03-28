@@ -1,40 +1,49 @@
+
 .header {
-  position: absolute;
-  width: 100%;
-  padding-top: 32px;
-  padding-bottom: 32px;
+    position: absolute;
+    width:100%;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
-.header-list {
+
+
+
+
+.header-list{
   display: flex;
   gap: 30px;
 }
 
-.header-tel:hover {
-  color: #FF6C00;
+.header-tel:hover{
+  color: #FF6C00; 
 }
 
 .header-tel, .hero-link {
   transition: color 300ms linear;
 }
 
-.header-navigation {
+.header-navigation{
   display: flex;
   align-items: center;
 }
 
-.header-container {
+.header-container{
   display: flex;
   align-items: center;
 }
 
-.header-connect {
+.header-connect{
   margin-left: auto;
 }
 
-.header-logo {
-  margin-right: 131px;
+.header-logo{
+
+    margin-right: 131px;
+  
 }
+
+
 
 .header-link,
 .header-tel {
@@ -42,11 +51,15 @@
   font-size: 12px;
   line-height: var(--typical-lh);
   letter-spacing: 0.1em;
+
   color: var(--main-color);
 }
 
-.header-link {
+
+.header-link{
   transition: color 300ms linear;
+
+  
 }
 
 .header-link:hover,
@@ -54,7 +67,9 @@
   color: var(--accent-color);
 }
 
+
+
 .header-btn {
   color: var(--main-color);
   margin-left: 40px;
-}/*# sourceMappingURL=main.css.map */
+}
