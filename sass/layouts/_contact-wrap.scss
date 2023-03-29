@@ -1,0 +1,18 @@
+
+  
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact-wrap{
+    background-color: #121c26;
+    background-image: url(../img/bg-contacts-min.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: calc(50% - 15px) 100%;
+    margin: 0 auto;
+    max-width: 1600px;
+  
+  }
+
