@@ -946,7 +946,7 @@ margin-right: 5px;
 }
 
 .barbers-title {
-  color: var(--second-title-color);
+  color: #303030;
   margin-bottom: 44px;
 }
 
@@ -1036,7 +1036,7 @@ margin-right: 5px;
 } */
 .barbers-soc-link:hover,
 .barbers-soc-link:focus {
-  background-color: rgb(143, 157, 157);
+  background-color: rgb(79, 78, 78);
 }
 
 .barbers-soc-link:hover .barbers-soc-icon,
