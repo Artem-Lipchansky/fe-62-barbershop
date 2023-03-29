@@ -1,6 +1,23 @@
+
+@import "./base/common";
 @import "./base/reset";
+@import "./utils/hidden";
 @import "./components/container";
+
+@import "./utils/vars";
+
+@import "./components/btn";
+@import "./components/section";
+@import "./components/top-text";
+@import "./components/container";
+@import "./components/container";
+
 @import "./layouts/header";
 @import "./layouts/hero";
-@import "./utils/vars";
+@import "./layouts/about";
+@import "./layouts/prices";
+@import "./layouts/benefits";
+@import "./layouts/about";
+@import "./layouts/about";
+
 
