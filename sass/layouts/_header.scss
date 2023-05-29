@@ -59,13 +59,13 @@
 .header-link{
   transition: color 300ms linear;
 
-  
+  &:hover,
+  &:focus {
+      color: var(--accent-color);
+    }
 }
 
-.header-link:hover,
-.header-link:focus {
-  color: var(--accent-color);
-}
+
 
 
 

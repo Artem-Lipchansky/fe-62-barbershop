@@ -30,19 +30,22 @@
       margin-bottom: 44px;
   }
   
-  .prices-list:first-child{
-    background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
-  }
-  
-  .prices-list:last-child {
-    background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
-  }
+ 
   
   .prices-list {
     
     padding: 30px 20px;
   
     width: calc((100% - 30px) /2);
+
+
+    &:first-child {
+        background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+      }
+    
+      &:last-child {
+        background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+      }
     
   
   }
@@ -50,13 +53,7 @@
   .list {}
   
   
-  .prices-item::after{
-  content: '';
-  flex-grow: 1;
-  height: 1px;
-  background-color: rgba(157, 164, 189, 0.12);
-  
-  }
+ 
   
   .prices-item {
     display: flex;
@@ -64,15 +61,28 @@
     margin-bottom: 20px;
     align-items: baseline;
     gap:12px;
+
+    &::after {
+        content: '';
+        flex-grow: 1;
+        height: 1px;
+        background-color: rgba(157, 164, 189, 0.12);
+    
+      }
+
+
+             &:last-child {
+               margin-bottom: 0;
+             }
+
+                .prices-item-text:last-child {
+                              order: 1;
+                            }
+                           
   }
   
-  .prices-item:last-child{
-    margin-bottom: 0;
-  }
-  
-  .prices-item-text:last-child {
-    order:1;
-  }
+ 
+ 
   
   .prices-item-text {
     

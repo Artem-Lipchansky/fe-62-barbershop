@@ -15,12 +15,14 @@
   
       transition: color 300ms linear, background-color 300ms linear;
   
-      
+  &:hover,
+  &:focus{
+    background-color: var(--accent-color);
+    color: var(--main-color);
+
+  }
+   
       
   }
   
-  
-  .btn:hover{
-    background-color: #FF6C00;
-  }
   

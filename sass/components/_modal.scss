@@ -73,29 +73,39 @@
     color: #7fffd4;
     padding-left: 35px;
     outline: transparent;
-  }
-  
-  .modal-input:focus{
+
+     &:focus{
   border: 1px solid #FF6C00;
   
   }
+
+
+     &::placeholder {
+       font-size: 14px;
+       color: #4058ae;
   
-  .modal-input:focus + .modal-input-icon{
-  fill: #FF6C00;
+     }
+
+      &:not(:focus):not(:placeholder-shown):invalid {
+         background-color: #4058ae;
+      
+       }
+
+
+      &:not(:focus):not(:placeholder-shown):valid {
+        background-color: #FF6C00;
+      }
   }
   
+ 
   
   
-  .modal-input::placeholder, 
-  .modal-comment::placeholder{
-    font-size: 14px;
-    color: #4058ae;
   
-  }
   
-  .modal-input:not(:focus):not(:placeholder-shown):valid{
-    background-color: #FF6C00;
-  }
+  
+ 
+  
+ 
   
   
   .check-text{
@@ -224,10 +234,7 @@
   
   */
   
-  .modal-input:not(:focus):not(:placeholder-shown):invalid {
-    background-color: #4058ae;
-    
-  }
+
   
   
   .modal-label-text, .modal-label{
@@ -258,6 +265,11 @@
     top:50%;
     transform: translateY(-50%);
     left: 5px;
+
+
+    .modal-input:focus + & {
+        fill: #FF6C00;
+      }
   }
   
   
