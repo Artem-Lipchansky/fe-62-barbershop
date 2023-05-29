@@ -469,9 +469,10 @@ margin-right: 5px;
   padding: 272px 100px 208px 100px;
   background-color: var(--second-btn-color);
   flex-grow: 1;
-  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(/img/Slider-new.jpg);
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)), url("../img/Slider-new.jpg");
   background-repeat: no-repeat;
-  background-image: center;
+  background-position: center;
   background-size: cover;
 }
 
