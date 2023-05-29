@@ -114,6 +114,40 @@
     display: flex;
     align-items: center;
     position: relative;
+
+
+       span {
+      
+          content: '';
+          width: 16px;
+          height: 15px;
+          border: 2px solid #000000;
+          border-radius: 2px;
+          margin-right: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          fill: transparent;
+      
+        }
+
+                 .input-check:checked + & {
+                   background-color: #FF6C00;
+                   border-color: transparent;
+                   fill: #ffffff;
+                 }
+        
+                 .input-check:focus + & {
+        
+                   border-color: var(--accent-color);
+        
+                 }
+        
+                 .input-check:hover + & {
+        
+                   border-color: var(--accent-color);
+        
+                 }
   }
   
   
@@ -159,39 +193,9 @@
   
   
   
-  .check-text span{
+
   
-    content: '';
-  width: 16px;
-  height: 15px;
-  border: 2px solid #000000;
-  border-radius: 2px;
-  margin-right: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  fill:transparent;
-  
-  }
-  
-  
-  .input-check:checked + .check-text span{
-  background-color: #FF6C00;
-  border-color: transparent;
-  fill:#ffffff;
-  }
-  
-  .input-check:focus + .check-text span{
-    
-    border-color: var(--accent-color);
-    
-    }
-  
-    .input-check:hover + .check-text span{
-    
-      border-color: var(--accent-color);
-      
-      }
+ 
   
       .filter-text{
         background-color: antiquewhite;
@@ -250,6 +254,13 @@
     resize: none;
     padding: 10px;
     border-radius: 5px;
+
+
+      &::placeholder {
+          font-size: 14px;
+          color: #4058ae;
+      
+        }
   }
   
   
