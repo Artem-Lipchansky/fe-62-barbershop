@@ -1,10 +1,13 @@
 
-@import "./base/common";
+
 @import "./base/reset";
+@import "./utils/vars";
+@import "./utils/placeholders";
+@import "./base/common";
 @import "./utils/hidden";
 @import "./components/container";
 
-@import "./utils/vars";
+
 
 @import "./components/btn";
 @import "./components/section";

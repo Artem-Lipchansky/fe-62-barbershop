@@ -5,8 +5,7 @@
     
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      display: flex;
-      align-items:center;
+    @extend %align-element;
       gap:20px;
 
 

@@ -24,13 +24,11 @@
 }
 
 .header-navigation{
-  display: flex;
-  align-items: center;
+  @extend %align-element;
 }
 
 .header-container{
-  display: flex;
-  align-items: center;
+@extend %align-element;
 }
 
 .header-connect{
