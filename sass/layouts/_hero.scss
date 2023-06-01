@@ -19,7 +19,8 @@
   
   .hero-soc{
     width: 100px;
-    @extend %align-element;
+    display: flex;
+    align-items: flex-end;
     padding-left: 27px;
     padding-bottom: 40px;
   }
@@ -66,7 +67,7 @@
 
 
         &::before {
-            content: ' ';
+            content: " ";
             width: 60px;
             height: 1px;
             background-color: #303030;
@@ -76,16 +77,7 @@
           }
   
   }
-     .hero-list::before {
-        content: ' ';
-        width: 60px;
-        height: 1px;
-        background-color: #303030;
     
-    
-    
-      }
- 
   
   .hero-top-text {
    

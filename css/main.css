@@ -43,7 +43,7 @@ img {
   --midle-lh: 1.33;
 }
 
-.barbers-soc-link, .hero-soc, .header-container, .header-navigation, .check-text span, .check-text, .modal-btn, .top-text {
+.barbers-soc-link, .header-container, .header-navigation, .check-text span, .check-text, .modal-btn, .top-text {
   display: flex;
   align-items: center;
 }
@@ -437,6 +437,8 @@ margin-right: 5px;
 
 .hero-soc {
   width: 100px;
+  display: flex;
+  align-items: flex-end;
   padding-left: 27px;
   padding-bottom: 40px;
 }
@@ -472,13 +474,6 @@ margin-right: 5px;
   align-items: center;
   gap: 40px;
 }
-.hero-list::before {
-  content: " ";
-  width: 60px;
-  height: 1px;
-  background-color: #303030;
-}
-
 .hero-list::before {
   content: " ";
   width: 60px;
