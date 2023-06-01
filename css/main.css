@@ -479,6 +479,13 @@ margin-right: 5px;
   background-color: #303030;
 }
 
+.hero-list::before {
+  content: " ";
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
+}
+
 .hero-top-text {
   color: rgba(157, 164, 189, 0.6);
   margin-bottom: 20px;

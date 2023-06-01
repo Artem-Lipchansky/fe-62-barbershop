@@ -1,5 +1,4 @@
 
-
 .hero-link {
     font-weight: 600;
     font-size: 11px;
@@ -61,12 +60,24 @@
     
     transform-origin: bottom left;
     transform: rotate(-90deg) translateY(100%);
-    %align-element
+      display: flex;
+        align-items: center;
     gap: 40px;
 
 
         &::before {
-        content: " ";
+            content: ' ';
+            width: 60px;
+            height: 1px;
+            background-color: #303030;
+        
+        
+        
+          }
+  
+  }
+     .hero-list::before {
+        content: ' ';
         width: 60px;
         height: 1px;
         background-color: #303030;
@@ -74,9 +85,6 @@
     
     
       }
-  
-  }
-  
  
   
   .hero-top-text {
@@ -139,4 +147,3 @@
     color: #9da4bd;
     max-width: 360px;
   }
-  
