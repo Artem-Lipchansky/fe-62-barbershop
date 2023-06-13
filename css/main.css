@@ -228,14 +228,6 @@ body {
   background-color: #FF6C00;
 }
 
-.icon-check-best {
-  border: 2px solid var(--accent-color);
-  border-radius: 2px;
-  margin-right: 8px;
-  width: 16px;
-  height: 15px;
-}
-
 .check-text {
   font-size: 14px;
   color: #555555;
