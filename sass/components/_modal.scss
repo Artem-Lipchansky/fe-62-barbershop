@@ -99,9 +99,14 @@
  
   
   
-  
-  
-  
+    .icon-check-best{
+          border: 2px solid var(--accent-color);
+            border-radius: 2px;
+            margin-right: 8px;
+            width: 16px;
+            height: 15px;
+    }
+
  
   
  
@@ -110,11 +115,12 @@
   .check-text{
     font-size: 14px;
     color: #555555;
-  @extend %align-element;
+  display: flex;
+  align-items: center;
     position: relative;
 
 
-       span {
+       & span {
       
           
           width: 16px;
@@ -148,7 +154,7 @@
   }
   
 }
-  /*
+  
   
   .check-text::before{
   content: '';
@@ -186,7 +192,7 @@
       background-color: #b31818;
   
     }
-  */
+  
   
   
   
