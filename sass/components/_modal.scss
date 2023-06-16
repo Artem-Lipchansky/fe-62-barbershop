@@ -111,9 +111,9 @@
     position: relative;
 
 
-        span {
+        & span {
       
-          
+          content: ' ';
           width: 16px;
           height: 15px;
           border: 2px solid #000000;
@@ -122,14 +122,16 @@
         @extend %align-element;
           justify-content: center;
           fill: transparent;
+          cursor: pointer;
       
         
 
-                 .input-check:checked + & {
+                 .input-check:checked + .icon-check-best {
                    background-color: #FF6C00;
                    border-color: transparent;
                    fill: #ffffff;
                  }
+                 
         
                  .input-check:focus + & {
         
@@ -142,11 +144,24 @@
                    border-color: var(--accent-color);
         
                  }
+
+             
   }
   
 }
+
+ /*
+.icon-check-best:checked{
+   
+      font-size: 14px;
+      color: #555;
+      display: flex;
+      align-items: center;
+      position: relative;
+    
+}
   
-  
+ 
   .check-text::before{
   content: '';
   width: 40px;
@@ -185,7 +200,7 @@
     }
   
   
-  
+  */
   
 
   

@@ -236,6 +236,7 @@ body {
   position: relative;
 }
 .check-text span {
+  content: " ";
   width: 16px;
   height: 15px;
   border: 2px solid #000000;
@@ -243,8 +244,9 @@ body {
   margin-right: 5px;
   justify-content: center;
   fill: transparent;
+  cursor: pointer;
 }
-.input-check:checked + .check-text span {
+.check-text span .input-check:checked + .icon-check-best {
   background-color: #FF6C00;
   border-color: transparent;
   fill: #ffffff;
@@ -256,37 +258,57 @@ body {
   border-color: var(--accent-color);
 }
 
-.check-text::before {
-  content: "";
+/*
+.icon-check-best:checked{
+
+      font-size: 14px;
+      color: #555;
+      display: flex;
+      align-items: center;
+      position: relative;
+
+}
+
+
+  .check-text::before{
+  content: '';
   width: 40px;
   height: 22px;
-  border: 1px solid #7fffd4;
+  border: 1px solid #7fffd4 ;
   border-radius: 50px;
   margin-right: 7px;
-  transition: background-color 250ms linear;
-}
+  transition:  background-color 250ms linear;
+  }
 
-.check-text::after {
-  content: "";
-  width: 18px;
-  height: 18px;
-  background-color: #4058ae;
-  border-radius: 50%;
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  transition: transform 250ms linear, background-color 250ms linear;
-}
 
-.input-check:checked + .check-text::after {
-  transform: translate(18px);
-  background-color: #FFFFFF;
-}
+  .check-text::after{
+    content: '';
+    width: 18px;
+    height: 18px;
+    background-color:  #4058ae ;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 250ms linear, background-color 250ms linear;
+    }
 
-.input-check:checked + .check-text::before {
-  background-color: #b31818;
-}
 
+    .input-check:checked + .check-text::after{
+      transform: translate(18px);
+      background-color: #FFFFFF;
+
+    }
+
+
+    .input-check:checked + .check-text::before{
+
+      background-color: #b31818;
+
+    }
+
+
+  */
 .filter-text {
   background-color: antiquewhite;
   padding: 6px 22px;
