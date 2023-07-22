@@ -245,27 +245,38 @@ body {
   justify-content: center;
   fill: transparent;
   cursor: pointer;
-}
-.check-text span .input-check:checked + .icon-check-best {
-  background-color: #FF6C00;
-  border-color: transparent;
-  fill: #ffffff;
-}
-.input-check:focus + .check-text span {
-  border-color: var(--accent-color);
-}
-.input-check:hover + .check-text span {
-  border-color: var(--accent-color);
+  /*
+                   .input-check:checked + .icon-check-best {
+                     background-color: #FF6C00;
+                     border-color: transparent;
+                     fill: #ffffff;
+                   }
+
+
+                   .input-check:focus + & {
+
+                     border-color: var(--accent-color);
+
+                   }
+
+                   .input-check:hover + & {
+
+                     border-color: var(--accent-color);
+
+                   }
+  */
 }
 
-.icon-check-best:checked {
-  font-size: 14px;
-  color: #555;
-  display: flex;
-  align-items: center;
-  position: relative;
-}
+/*
+.icon-check-best:checked{
 
+      font-size: 14px;
+      color: #555;
+      display: flex;
+      align-items: center;
+      position: relative;
+
+}*/
 .icon-check-best:hover {
   font-size: 14px;
   color: #555;
@@ -282,18 +293,6 @@ body {
   border-radius: 50px;
   margin-right: 7px;
   transition: background-color 250ms linear;
-}
-
-.check-text::after {
-  content: "";
-  width: 18px;
-  height: 18px;
-  background-color: #4058ae;
-  border-radius: 50%;
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  transition: transform 250ms linear, background-color 250ms linear;
 }
 
 .input-check:checked + .check-text::after {
@@ -382,6 +381,18 @@ body {
   margin-bottom: 15px;
 }
 
+/*
+    .check-text::after {
+      content: '';
+      width: 18px;
+      height: 18px;
+      background-color: #4058ae;
+      border-radius: 50%;
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      transition: transform 250ms linear, background-color 250ms linear;
+    }*/
 .header {
   position: absolute;
   width: 100%;

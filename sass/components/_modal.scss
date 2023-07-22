@@ -150,7 +150,7 @@
   
 }
 
-
+/*
 .icon-check-best:checked{
    
       font-size: 14px;
@@ -159,7 +159,7 @@
       align-items: center;
       position: relative;
     
-}
+}*/
 
 
 .icon-check-best:hover {
@@ -184,17 +184,7 @@
   }
   
   
-  .check-text::after{
-    content: '';
-    width: 18px;
-    height: 18px;
-    background-color:  #4058ae ;
-    border-radius: 50%;
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    transition: transform 250ms linear, background-color 250ms linear;
-    }
+  
   
   
     .input-check:checked + .check-text::after{
@@ -307,5 +297,19 @@
   .modal-field{
     margin-bottom: 15px;
   }
+
+
+/*
+    .check-text::after {
+      content: '';
+      width: 18px;
+      height: 18px;
+      background-color: #4058ae;
+      border-radius: 50%;
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      transition: transform 250ms linear, background-color 250ms linear;
+    }*/
   
   
