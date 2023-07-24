@@ -729,11 +729,21 @@ body {
     padding-left: 100px;
 }
 
-.contacts-item{
+
+.contacts-list::before{
+    display: flex;
+}
+
+.contacts-photo, .contacts-item{
     
-        
-        stroke: currentColor;
-        fill: currentColor;
+            align-items: center;
+                display: flex;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 1.14;
+                letter-spacing: 0.02em;
+                color: #757575;
+       
 
 }
 
