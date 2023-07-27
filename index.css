@@ -734,18 +734,7 @@ body {
     display: flex;
 }
 
-.contacts-photo, .contacts-item{
-    
-            align-items: center;
-                display: flex;
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 1.14;
-                letter-spacing: 0.02em;
-                color: #757575;
-       
 
-}
 
 
 
@@ -778,7 +767,23 @@ body {
     line-height: 1.67;
     letter-spacing: 0.02em;
     color: #9da4bd;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    
 }
+
+.contacts-item, .contacts-photo{
+margin-right: 10px;
+}
+
+
+.contacts-item:hover,
+.contacts-photo:hover{
+    
+}
+
+
 
 .contacts-subtitle {
     font-weight: 600;
