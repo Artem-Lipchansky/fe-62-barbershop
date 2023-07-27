@@ -925,6 +925,10 @@ color: #FF6C00;
     padding: 40px;
 }
 
+.modal-close-item:hover{
+fill: #ff6c00;
+}
+
 .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(0);
 }
