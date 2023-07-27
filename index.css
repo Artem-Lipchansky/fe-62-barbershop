@@ -778,9 +778,16 @@ margin-right: 10px;
 }
 
 
-.contacts-item:hover,
+.contacts-link:hover,
 .contacts-photo:hover{
-    
+    color: #FF6C00;
+        transition: color 300ms linear 0s;
+}
+
+
+.contacts-address-link:hover{
+color: #FF6C00;
+    transition: color 300ms linear 0s;
 }
 
 
@@ -968,6 +975,7 @@ margin-right: 10px;
     display: flex;
     align-items: center;
     position: relative;
+    cursor: pointer;
 }
 
 /* .check-text::before {
