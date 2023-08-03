@@ -33,6 +33,10 @@
     text-transform: uppercase;
     color: rgba(157, 164, 189, 0.4);
     transition: transform 250ms linear;
+    .online-item:focus+ &,
+        .online-item:not(:placeholder-shown)+ & {
+            transform: translateY(-100%);
+        }
 }
 
 .online-input {
@@ -47,16 +51,15 @@
     border-bottom: 1px solid rgba(157, 164, 189, 0.4);
     outline: transparent;
     color: #f7f7f7;
+
+    &:focus {
+            border-color: #ffffff;
+        }
 }
 
-.online-item:focus {
-    border-color: #ffffff;
-}
 
-.online-item:focus+.online-label,
-.online-item:not(:placeholder-shown)+.online-label {
-    transform: translateY(-100%);
-}
+
+
 
 /* .online-item:focus::placeholder {
   color: #ffffff;

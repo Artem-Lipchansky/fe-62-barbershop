@@ -73,36 +73,44 @@
     color: #7661ca;
     padding-left: 35px;
     outline: transparent;
+
+    &:focus {
+            border: 1px solid var(--accent-color);
+        }
+
+                &::placeholder
+                 {
+                    font-size: 14px;
+                    color: turquoise;
+                }
+
+                                &:not(:focus):not(:placeholder-shown):valid {
+                                    background-color: rgba(0, 128, 0, 0.307);
+                                }
+                
+                                &:not(:focus):not(:placeholder-shown):invalid {
+                                    background-color: rgba(128, 45, 0, 0.307);
+                                }
 }
 
-.modal-input:focus {
-    border: 1px solid var(--accent-color);
-}
 
-.modal-input:focus+.modal-input-icon {
-    fill: var(--accent-color);
-}
+
+
 
 .modal-input-icon {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 5px;
+
+    .modal-input:focus+ & {
+            fill: var(--accent-color);
+        }
 }
 
-.modal-input::placeholder,
-.modal-comment::placeholder {
-    font-size: 14px;
-    color: turquoise;
-}
 
-.modal-input:not(:focus):not(:placeholder-shown):valid {
-    background-color: rgba(0, 128, 0, 0.307);
-}
 
-.modal-input:not(:focus):not(:placeholder-shown):invalid {
-    background-color: rgba(128, 45, 0, 0.307);
-}
+
 
 .modal-label-text,
 .modal-label {
@@ -118,6 +126,11 @@
     border-radius: 5px;
     resize: none;
     padding: 10px;
+
+    &::placeholder {
+            font-size: 14px;
+            color: turquoise;
+        }
 }
 
 .check-text {
@@ -127,6 +140,28 @@
     align-items: center;
     position: relative;
     cursor: pointer;
+
+    span {
+            width: 16px;
+            height: 15px;
+            border: 2px solid #111319;
+            border-radius: 2px;
+            margin-right: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            fill: transparent;
+    
+            .input-check:checked+& {
+                background-color: var(--accent-color);
+                border-color: transparent;
+                fill: #5bd67c;
+            }
+    
+            .input-check:focus+& {
+                border-color: var(--accent-color);
+            }
+        }
 }
 
 /* .check-text::before {
@@ -160,27 +195,9 @@
   background-color: #84e998;
 } */
 
-.check-text span {
-    width: 16px;
-    height: 15px;
-    border: 2px solid #111319;
-    border-radius: 2px;
-    margin-right: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    fill: transparent;
-}
 
-.input-check:checked+.check-text span {
-    background-color: var(--accent-color);
-    border-color: transparent;
-    fill: #5bd67c;
-}
 
-.input-check:focus+.check-text span {
-    border-color: var(--accent-color);
-}
+
 
 /* .check-text::before {
   content: '';

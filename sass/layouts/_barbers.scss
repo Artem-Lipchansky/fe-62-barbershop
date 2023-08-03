@@ -23,9 +23,7 @@
     width: calc((100% - 60px) / 3);
 }
 
-.barbers-item:hover .barbers-cover-text {
-    transform: translateY(0);
-}
+
 
 .barbers-top-wrap {
     position: relative;
@@ -45,6 +43,10 @@
     transform: translateY(100%);
     transition: transform 300ms linear;
     overflow: auto;
+
+    .barbers-item:hover & {
+            transform: translateY(0);
+        }
 }
 
 .barbers-item-content {
@@ -80,11 +82,21 @@
     justify-content: center;
     color: #ffffff;
     transition: background-color 300ms linear;
+
+    &:hover,
+    &:focus {
+            background-color: rgb(61, 61, 61);
+        }
 }
 
 .barbers-soc-icon {
     fill: #ffffff;
     transition: fill 300ms linear;
+
+    .barbers-soc-link:hover &,
+        .barbers-soc-link:focus & {
+            fill: #FF6C00;
+        }
 }
 
 /* .barbers-soc-link:hover,
@@ -93,12 +105,4 @@
   color: #7661ca;
 } */
 
-.barbers-soc-link:hover,
-.barbers-soc-link:focus {
-    background-color: rgb(61, 61, 61);
-}
 
-.barbers-soc-link:hover .barbers-soc-icon,
-.barbers-soc-link:focus .barbers-soc-icon {
-    fill: #FF6C00;
-}

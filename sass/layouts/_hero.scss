@@ -16,14 +16,16 @@
     transform: rotate(-90deg) translateY(100%);
     align-items: center;
     gap: 40px;
+
+    &::before {
+            content: '';
+            width: 60px;
+            height: 1px;
+            background-color: #303030;
+        }
 }
 
-.hero-list::before {
-    content: '';
-    width: 60px;
-    height: 1px;
-    background-color: #303030;
-}
+
 
 .hero-link {
     font-weight: 600;
@@ -31,12 +33,14 @@
     line-height: var(--typical-lh);
     letter-spacing: 0.2em;
     color: #303030;
+
+    &:hover,
+        &:focus {
+            color: #ff6c00;
+        }
 }
 
-.hero-link:hover,
-.hero-link:focus {
-    color: #ff6c00;
-}
+
 
 
 .hero-link {
@@ -61,11 +65,13 @@
 .hero-top-text {
     color: rgba(157, 164, 189, 0.6);
     margin-bottom: 20px;
+
+    &::before {
+            background-color: rgba(157, 164, 189, 0.6);
+        }
 }
 
-.hero-top-text::before {
-    background-color: rgba(157, 164, 189, 0.6);
-}
+
 
 .hero-title {
     font-family: 'Raleway', sans-serif;
@@ -77,24 +83,31 @@
     margin-bottom: 20px;
     display: flex;
     align-items: baseline;
+
+    &:hover{
+    &::before {
+            color: green;
+        }
+}
+    &::before {
+            content: '\1F525';
+            font-size: 40px;
+            width: 40px;
+            height: 40px;
+            /* background-image: url(../images/barbers-img-1.jpeg); */
+            background-size: cover;
+        }
+
+                &::after {
+                    content: '!';
+                }
 }
 
-.hero-title::before {
-    content: '\1F525';
-    font-size: 40px;
-    width: 40px;
-    height: 40px;
-    /* background-image: url(../images/barbers-img-1.jpeg); */
-    background-size: cover;
-}
 
-.hero-title:hover::before {
-    color: green;
-}
 
-.hero-title::after {
-    content: '!';
-}
+
+
+
 
 .hero-bottom-text {
     font-size: 18px;

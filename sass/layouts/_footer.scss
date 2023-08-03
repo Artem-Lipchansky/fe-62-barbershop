@@ -65,10 +65,10 @@
 
     transition: color 300ms linear;
 
+    &:hover,
+    &:focus {
+            color: #ff6c00;
+        }
 
 }
 
-.footer-link:hover,
-.footer-link:focus {
-    color: #ff6c00;
-}

@@ -36,10 +36,19 @@
 .header-tel {
     transition: color 300ms linear;
 
+    &:hover,
+    &:focus {
+            color: #ff6c00;
+        }
 }
 
 .header-link {
     transition: color 300ms linear;
+
+    &:hover,
+    &:focus {
+            color: #ff6c00;
+        }
 }
 
 /* .header-tel {
@@ -54,15 +63,9 @@
     margin-left: auto;
 }
 
-.header-link:hover,
-.header-link:focus {
-    color: #ff6c00;
-}
 
-.header-tel:hover,
-.header-tel:focus {
-    color: #ff6c00;
-}
+
+
 
 .header-btn {
     color: var(--main-btn-color);
