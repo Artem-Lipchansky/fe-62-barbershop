@@ -43,6 +43,11 @@ img {
   display: block;
 }
 
+.footer-list, .footer-cover, .contacts-subtitle, .contacts-link, .barbers-soc-link, .hero-list, .header-container, .header-navigation, .check-text span, .top-text {
+  display: flex;
+  align-items: center;
+}
+
 body {
   font-family: var(--main-font);
 }
@@ -78,6 +83,10 @@ body {
 
 .btn {
   font-family: inherit;
+  line-height: 1.3333333333;
+  letter-spacing: 0.09em;
+  font-weight: 600;
+  font-size: 12px;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -91,8 +100,7 @@ body {
   height: 40px;
   transition: color 300ms linear, background-color 300ms linear;
 }
-
-.btn:hover {
+.btn:hover, .btn:focus {
   background-color: var(--accent-color);
   color: var(--main-btn-color);
 }
@@ -115,11 +123,8 @@ body {
   font-size: 11px;
   line-height: var(--typical-lh);
   text-transform: uppercase;
-  display: flex;
-  align-items: center;
   gap: 20px;
 }
-
 .top-text::before {
   content: "";
   width: 60px;
@@ -203,13 +208,28 @@ body {
   padding-left: 35px;
   outline: transparent;
 }
-
 .modal-input:focus {
   border: 1px solid var(--accent-color);
 }
-
-.modal-input:focus + .modal-input-icon {
-  fill: var(--accent-color);
+.modal-input::-moz-placeholder {
+  font-size: 14px;
+  color: turquoise;
+}
+.modal-input::placeholder {
+  font-size: 14px;
+  color: turquoise;
+}
+.modal-input:not(:focus):not(:-moz-placeholder-shown):valid {
+  background-color: rgba(0, 128, 0, 0.307);
+}
+.modal-input:not(:focus):not(:placeholder-shown):valid {
+  background-color: rgba(0, 128, 0, 0.307);
+}
+.modal-input:not(:focus):not(:-moz-placeholder-shown):invalid {
+  background-color: rgba(128, 45, 0, 0.307);
+}
+.modal-input:not(:focus):not(:placeholder-shown):invalid {
+  background-color: rgba(128, 45, 0, 0.307);
 }
 
 .modal-input-icon {
@@ -218,32 +238,8 @@ body {
   transform: translateY(-50%);
   left: 5px;
 }
-
-.modal-input::-moz-placeholder, .modal-comment::-moz-placeholder {
-  font-size: 14px;
-  color: turquoise;
-}
-
-.modal-input::placeholder,
-.modal-comment::placeholder {
-  font-size: 14px;
-  color: turquoise;
-}
-
-.modal-input:not(:focus):not(:-moz-placeholder-shown):valid {
-  background-color: rgba(0, 128, 0, 0.307);
-}
-
-.modal-input:not(:focus):not(:placeholder-shown):valid {
-  background-color: rgba(0, 128, 0, 0.307);
-}
-
-.modal-input:not(:focus):not(:-moz-placeholder-shown):invalid {
-  background-color: rgba(128, 45, 0, 0.307);
-}
-
-.modal-input:not(:focus):not(:placeholder-shown):invalid {
-  background-color: rgba(128, 45, 0, 0.307);
+.modal-input:focus + .modal-input-icon {
+  fill: var(--accent-color);
 }
 
 .modal-label-text,
@@ -261,6 +257,14 @@ body {
   resize: none;
   padding: 10px;
 }
+.modal-comment::-moz-placeholder {
+  font-size: 14px;
+  color: turquoise;
+}
+.modal-comment::placeholder {
+  font-size: 14px;
+  color: turquoise;
+}
 
 .check-text {
   font-size: 14px;
@@ -269,6 +273,23 @@ body {
   align-items: center;
   position: relative;
   cursor: pointer;
+}
+.check-text span {
+  width: 16px;
+  height: 15px;
+  border: 2px solid #111319;
+  border-radius: 2px;
+  margin-right: 5px;
+  justify-content: center;
+  fill: transparent;
+}
+.input-check:checked + .check-text span {
+  background-color: var(--accent-color);
+  border-color: transparent;
+  fill: #5bd67c;
+}
+.input-check:focus + .check-text span {
+  border-color: var(--accent-color);
 }
 
 /* .check-text::before {
@@ -301,28 +322,6 @@ body {
 .input-check:checked + .check-text::before {
   background-color: #84e998;
 } */
-.check-text span {
-  width: 16px;
-  height: 15px;
-  border: 2px solid #111319;
-  border-radius: 2px;
-  margin-right: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  fill: transparent;
-}
-
-.input-check:checked + .check-text span {
-  background-color: var(--accent-color);
-  border-color: transparent;
-  fill: #5bd67c;
-}
-
-.input-check:focus + .check-text span {
-  border-color: var(--accent-color);
-}
-
 /* .check-text::before {
   content: '';
   width: 16px;
@@ -368,16 +367,6 @@ body {
   margin-right: 131px;
 }
 
-.header-navigation {
-  display: flex;
-  align-items: center;
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
-}
-
 .header-list {
   display: flex;
   gap: 30px;
@@ -395,9 +384,15 @@ body {
 .header-tel {
   transition: color 300ms linear;
 }
+.header-tel:hover, .header-tel:focus {
+  color: #ff6c00;
+}
 
 .header-link {
   transition: color 300ms linear;
+}
+.header-link:hover, .header-link:focus {
+  color: #ff6c00;
 }
 
 /* .header-tel {
@@ -409,16 +404,6 @@ body {
 } */
 .header-connect {
   margin-left: auto;
-}
-
-.header-link:hover,
-.header-link:focus {
-  color: #ff6c00;
-}
-
-.header-tel:hover,
-.header-tel:focus {
-  color: #ff6c00;
 }
 
 .header-btn {
@@ -439,13 +424,10 @@ body {
 }
 
 .hero-list {
-  display: flex;
   transform-origin: bottom left;
   transform: rotate(-90deg) translateY(100%);
-  align-items: center;
   gap: 40px;
 }
-
 .hero-list::before {
   content: "";
   width: 60px;
@@ -460,9 +442,7 @@ body {
   letter-spacing: 0.2em;
   color: #303030;
 }
-
-.hero-link:hover,
-.hero-link:focus {
+.hero-link:hover, .hero-link:focus {
   color: #ff6c00;
 }
 
@@ -483,7 +463,6 @@ body {
   color: rgba(157, 164, 189, 0.6);
   margin-bottom: 20px;
 }
-
 .hero-top-text::before {
   background-color: rgba(157, 164, 189, 0.6);
 }
@@ -499,7 +478,9 @@ body {
   display: flex;
   align-items: baseline;
 }
-
+.hero-title:hover::before {
+  color: green;
+}
 .hero-title::before {
   content: "🔥";
   font-size: 40px;
@@ -508,11 +489,6 @@ body {
   /* background-image: url(../images/barbers-img-1.jpeg); */
   background-size: cover;
 }
-
-.hero-title:hover::before {
-  color: green;
-}
-
 .hero-title::after {
   content: "!";
 }
@@ -592,17 +568,15 @@ body {
   margin-bottom: 44px;
 }
 
-.prices-list:first-child {
-  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
-}
-
-.prices-list:last-child {
-  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
-}
-
 .prices-list {
   padding: 30px 20px;
   width: calc((100% - 30px) / 2);
+}
+.prices-list:first-child {
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+.prices-list:last-child {
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 
 .prices-item {
@@ -612,14 +586,12 @@ body {
   align-items: baseline;
   gap: 12px;
 }
-
 .prices-item::after {
   content: "";
   flex-grow: 1;
   height: 1px;
   background-color: rgba(157, 164, 189, 0.12);
 }
-
 .prices-item:last-child {
   margin-bottom: 0;
 }
@@ -630,7 +602,6 @@ body {
   letter-spacing: 0.02em;
   color: #9da4bd;
 }
-
 .prices-item-text:last-child {
   order: 1;
 }
@@ -666,15 +637,12 @@ body {
   text-align: center;
   background-color: #f7f7f7;
 }
-
 .benefits-item:nth-child(odd) {
   margin-right: 30px;
 }
-
 .benefits-item:nth-child(even) {
   margin-top: 30px;
 }
-
 .benefits-item span {
   font-weight: 700;
   font-size: 42px;
@@ -734,10 +702,6 @@ body {
   width: calc((100% - 60px) / 3);
 }
 
-.barbers-item:hover .barbers-cover-text {
-  transform: translateY(0);
-}
-
 .barbers-top-wrap {
   position: relative;
   overflow: hidden;
@@ -756,6 +720,9 @@ body {
   transform: translateY(100%);
   transition: transform 300ms linear;
   overflow: auto;
+}
+.barbers-item:hover .barbers-cover-text {
+  transform: translateY(0);
 }
 
 .barbers-item-content {
@@ -786,16 +753,20 @@ body {
   height: 44px;
   border-radius: 50%;
   background-color: tomato;
-  display: flex;
-  align-items: center;
   justify-content: center;
   color: #ffffff;
   transition: background-color 300ms linear;
+}
+.barbers-soc-link:hover, .barbers-soc-link:focus {
+  background-color: rgb(61, 61, 61);
 }
 
 .barbers-soc-icon {
   fill: #ffffff;
   transition: fill 300ms linear;
+}
+.barbers-soc-link:hover .barbers-soc-icon, .barbers-soc-link:focus .barbers-soc-icon {
+  fill: #FF6C00;
 }
 
 /* .barbers-soc-link:hover,
@@ -803,16 +774,6 @@ body {
   background-color: teal;
   color: #7661ca;
 } */
-.barbers-soc-link:hover,
-.barbers-soc-link:focus {
-  background-color: rgb(61, 61, 61);
-}
-
-.barbers-soc-link:hover .barbers-soc-icon,
-.barbers-soc-link:focus .barbers-soc-icon {
-  fill: #FF6C00;
-}
-
 .gallery-top-text {
   color: #303030;
   margin-bottom: 44px;
@@ -881,6 +842,12 @@ body {
   color: rgba(157, 164, 189, 0.4);
   transition: transform 250ms linear;
 }
+.online-item:not(:-moz-placeholder-shown) + .online-label {
+  transform: translateY(-100%);
+}
+.online-item:focus + .online-label, .online-item:not(:placeholder-shown) + .online-label {
+  transform: translateY(-100%);
+}
 
 .online-input {
   width: 270px;
@@ -895,18 +862,8 @@ body {
   outline: transparent;
   color: #f7f7f7;
 }
-
 .online-item:focus {
   border-color: #ffffff;
-}
-
-.online-item:not(:-moz-placeholder-shown) + .online-label {
-  transform: translateY(-100%);
-}
-
-.online-item:focus + .online-label,
-.online-item:not(:placeholder-shown) + .online-label {
-  transform: translateY(-100%);
 }
 
 /* .online-item:focus::placeholder {
@@ -970,8 +927,6 @@ body {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
-  display: flex;
-  align-items: center;
   justify-items: center;
 }
 
@@ -996,8 +951,6 @@ body {
   font-size: 11px;
   line-height: var(--typical-lh);
   text-transform: uppercase;
-  display: flex;
-  align-items: center;
   gap: 20px;
   color: #ffffff;
   margin-bottom: 20px;
@@ -1045,8 +998,6 @@ body {
     color: #303030;
  } */
 .footer-cover {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -1063,16 +1014,12 @@ body {
   line-height: var(--typical-lh);
   letter-spacing: 0.2em;
   color: rgb(48, 48, 48);
-  display: flex;
-  align-items: center;
   gap: 20px;
 }
 
 .footer-link {
   transition: color 300ms linear;
 }
-
-.footer-link:hover,
-.footer-link:focus {
+.footer-link:hover, .footer-link:focus {
   color: #ff6c00;
 }/*# sourceMappingURL=main.css.map */

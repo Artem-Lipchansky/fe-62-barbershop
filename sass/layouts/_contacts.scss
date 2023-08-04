@@ -41,8 +41,7 @@
     line-height: 1.67;
     letter-spacing: 0.02em;
     color: #9da4bd;
-    display: flex;
-    align-items: center;
+    @extend %align-list;
     justify-items: center;
 
 }
@@ -72,8 +71,7 @@
     font-size: 11px;
     line-height: var(--typical-lh);
     text-transform: uppercase;
-    display: flex;
-    align-items: center;
+    @extend %align-list;
     gap: 20px;
     color: #ffffff;
     margin-bottom: 20px;

@@ -11,10 +11,10 @@
 }
 
 .hero-list {
-    display: flex;
+    
     transform-origin: bottom left;
     transform: rotate(-90deg) translateY(100%);
-    align-items: center;
+    @extend %align-list;
     gap: 40px;
 
     &::before {

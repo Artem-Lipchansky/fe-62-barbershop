@@ -147,8 +147,7 @@
             border: 2px solid #111319;
             border-radius: 2px;
             margin-right: 5px;
-            display: flex;
-            align-items: center;
+            @extend %align-list;
             justify-content: center;
             fill: transparent;
     
