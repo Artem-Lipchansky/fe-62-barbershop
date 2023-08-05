@@ -1,10 +1,10 @@
 .btn {
     font-family: inherit;
-    @include font(6, 12, 16, 0.09);
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.09em;
+    @include font(600, 12px, 1.33, 0.09em);
+    // font-weight: 600;
+    // font-size: 12px;
+    // line-height: 1.33;
+    // letter-spacing: 0.09em;
     text-transform: uppercase;
     cursor: pointer;
     border: 1px solid #ff6c00;
