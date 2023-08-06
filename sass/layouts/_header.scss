@@ -5,25 +5,25 @@
     padding-bottom: 32px;
 }
 
-.header-logo {
+.navigation__logo {
     margin-right: 131px;
 }
 
-.header-navigation {
+.navigation {
     @extend %align-list;
 }
 
-.header-container {
+.header__container {
     @extend %align-list;
 }
 
-.header-list {
+.menu {
     display: flex;
     gap: 30px;
 }
 
-.header-link,
-.header-tel {
+.menu__link,
+.connect__tel {
     font-weight: 600;
     font-size: 12px;
     line-height: 1.33;
@@ -31,7 +31,7 @@
     color: #ffffff;
 }
 
-.header-tel {
+.menu__link, .connect__tel {
     transition: color 300ms linear;
 
     &:hover,
@@ -57,7 +57,7 @@
   color: var(--main-color)
 } */
 
-.header-connect {
+.header__connect {
     margin-left: auto;
 }
 
@@ -65,7 +65,7 @@
 
 
 
-.header-btn {
+.connect__btn {
     color: var(--main-btn-color);
     margin-left: 40px;
 }
