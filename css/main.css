@@ -43,7 +43,7 @@ img {
   display: block;
 }
 
-.footer-list, .footer-cover, .contacts-subtitle, .contacts-link, .barbers-soc-link, .soc__list, .header__container, .navigation, .check-text span, .top-text {
+.footer-list, .footer-cover, .contacts-subtitle, .contacts-link, .socials__link, .soc__list, .header__container, .navigation, .check-text span, .top-text {
   display: flex;
   align-items: center;
 }
@@ -677,37 +677,37 @@ body {
   color: #555555;
 }
 
-.barbers-top-text {
+.barbers__top-text {
   color: #303030;
   margin-bottom: 20px;
 }
 
-.barbers-title {
+.barbers__title {
   color: var(--second-title-color);
   margin-bottom: 44px;
 }
 
-.barbers-list {
+.cards {
   display: flex;
   gap: 30px;
 }
 
-.barbers-soc-list {
+.socials {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
-.barbers-item {
+.cards__item {
   width: calc((100% - 60px) / 3);
 }
 
-.barbers-top-wrap {
+.cards__top-wrap {
   position: relative;
   overflow: hidden;
 }
 
-.barbers-cover-text {
+.cards__cover-text {
   position: absolute;
   top: 0;
   left: 0;
@@ -721,15 +721,15 @@ body {
   transition: transform 300ms linear;
   overflow: auto;
 }
-.barbers-item:hover .barbers-cover-text {
+.cards__item:hover .cards__cover-text {
   transform: translateY(0);
 }
 
-.barbers-item-content {
+.cards__item-content {
   padding-top: 30px;
 }
 
-.barbers-item-title {
+.cards__item-title {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.3888888889;
@@ -739,7 +739,7 @@ body {
   margin-bottom: 8px;
 }
 
-.barbers-item-text {
+.cards__item-text {
   font-size: 14px;
   line-height: 1.3571428571;
   text-align: center;
@@ -748,7 +748,7 @@ body {
   margin-bottom: 30px;
 }
 
-.barbers-soc-link {
+.socials__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -757,15 +757,15 @@ body {
   color: #ffffff;
   transition: background-color 300ms linear;
 }
-.barbers-soc-link:hover, .barbers-soc-link:focus {
+.socials__link:hover, .socials__link:focus {
   background-color: rgb(61, 61, 61);
 }
 
-.barbers-soc-icon {
+.socials__icon {
   fill: #ffffff;
   transition: fill 300ms linear;
 }
-.barbers-soc-link:hover .barbers-soc-icon, .barbers-soc-link:focus .barbers-soc-icon {
+.socials__link:hover .socials__icon, .socials__ link:focus .socials__icon {
   fill: #FF6C00;
 }
 
