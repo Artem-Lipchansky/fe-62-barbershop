@@ -553,60 +553,60 @@ body {
   background-size: cover;
 }
 
-.prices-wrap {
+.prices__wrap {
   display: flex;
   justify-content: space-between;
 }
 
-.prices-top-text {
+.prices-top__text {
   color: rgba(157, 164, 189, 0.6);
   margin-bottom: 20px;
 }
 
-.prices-title {
+.prices__title {
   color: #ffffff;
   margin-bottom: 44px;
 }
 
-.prices-list {
+.prices__list {
   padding: 30px 20px;
   width: calc((100% - 30px) / 2);
 }
-.prices-list:first-child {
+.prices__list:first-child {
   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
-.prices-list:last-child {
+.prices__list:last-child {
   background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 
-.prices-item {
+.prices__item {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
   align-items: baseline;
   gap: 12px;
 }
-.prices-item::after {
+.prices__item::after {
   content: "";
   flex-grow: 1;
   height: 1px;
   background-color: rgba(157, 164, 189, 0.12);
 }
-.prices-item:last-child {
+.prices__item:last-child {
   margin-bottom: 0;
 }
 
-.prices-item-text {
+.prices__item-text {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
 }
-.prices-item-text:last-child {
+.prices__item-text:last-child {
   order: 1;
 }
 
-.prices-btn {
+.prices__btn {
   color: #ffffff;
   margin: 0 auto;
   display: block;

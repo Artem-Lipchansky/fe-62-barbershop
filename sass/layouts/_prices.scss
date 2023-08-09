@@ -6,24 +6,24 @@
     background-size: cover;
 }
 
-.prices-wrap {
+.prices__wrap {
     display: flex;
     justify-content: space-between;
 }
 
-.prices-top-text {
+.prices-top__text {
     color: rgba(157, 164, 189, 0.6);
     margin-bottom: 20px;
 }
 
-.prices-title {
+.prices__title {
     color: #ffffff;
     margin-bottom: 44px;
 }
 
 
 
-.prices-list {
+.prices__list {
     padding: 30px 20px;
     width: calc((100% - 30px) / 2);
 
@@ -36,7 +36,7 @@
         }
 }
 
-.prices-item {
+.prices__item {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
@@ -58,7 +58,7 @@
 
 
 
-.prices-item-text {
+.prices__item-text {
     font-size: 18px;
     line-height: 1.67;
     letter-spacing: 0.02em;
@@ -71,7 +71,7 @@
 
 
 
-.prices-btn {
+.prices__btn {
     color: #ffffff;
     margin: 0 auto;
     display: block;
