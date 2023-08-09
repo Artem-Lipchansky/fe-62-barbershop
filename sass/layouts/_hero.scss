@@ -34,6 +34,8 @@
     letter-spacing: 0.2em;
     color: #303030;
 
+    transition: color 300ms linear;
+
     &:hover,
         &:focus {
             color: #ff6c00;
@@ -43,12 +45,7 @@
 
 
 
-.hero__link {
 
-    transition: color 300ms linear;
-
-
-}
 
 .hero__content {
     padding: 272px 100px 208px 100px;

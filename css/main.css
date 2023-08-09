@@ -445,13 +445,10 @@ body {
   line-height: var(--typical-lh);
   letter-spacing: 0.2em;
   color: #303030;
+  transition: color 300ms linear;
 }
 .soc__link:hover, .soc__link:focus {
   color: #ff6c00;
-}
-
-.hero__link {
-  transition: color 300ms linear;
 }
 
 .hero__content {
@@ -547,7 +544,7 @@ body {
 
 .prices {
   background-color: #111319;
-  background-image: url(../images/prices-bg.png);
+  background-image: url(../img/prices-bg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
