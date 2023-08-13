@@ -716,6 +716,9 @@ body {
 
 .cards {
   display: flex;
+  flex-wrap: wrap;
+  /* column-gap: 30px;
+  row-gap: 50px; */
   gap: 30px;
 }
 
@@ -725,8 +728,15 @@ body {
   gap: 10px;
 }
 
-.cards__item {
-  width: calc((100% - 60px) / 3);
+@media screen and (min-width: 768px) {
+  .cards__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .cards__top-wrap {

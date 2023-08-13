@@ -10,7 +10,10 @@
 
 .cards {
     display: flex;
-    gap: 30px;
+        flex-wrap: wrap;
+        /* column-gap: 30px;
+      row-gap: 50px; */
+        gap: 30px;
 }
 
 .socials {
@@ -20,7 +23,13 @@
 }
 
 .cards__item {
-    width: calc((100% - 60px) / 3);
+    @media screen and (min-width:768px) {
+            width: calc((100% - 30px) / 2);
+        }
+    
+        @media screen and (min-width:1200px) {
+            width: calc((100% - 90px) / 4);
+        }
 }
 
 
