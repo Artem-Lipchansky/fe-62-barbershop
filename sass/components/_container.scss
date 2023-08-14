@@ -5,17 +5,29 @@
 
     margin: 0 auto;
 
-    @media screen and (min-width:480px) {
+    @include mobile  {
         width: 448px;
     }
 
-    @media screen and (min-width:768px) {
+        @include tablet {
             width: 720px;
     }
 
-    @media screen and (min-width:1200px) {
+        @include desktop {
                     width: 1200px;
                 }
 
         
+}
+
+
+
+// @mixin media($size) {
+//     @media screen and (min-width: $size) {
+//         @content;
+//     }
+// }
+
+@mixin calc($count) {
+width: calc((100% - 30px * $count) / $count);
 }

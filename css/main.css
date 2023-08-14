@@ -88,7 +88,7 @@ body {
     width: 448px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 720px) {
   .container {
     width: 720px;
   }
@@ -825,16 +825,16 @@ body {
 }
 
 .gallery-item {
-  width: 100%;
+  width: calc((100% - 60px) / 2);
 }
 @media screen and (min-width: 768px) {
   .gallery-item {
-    width: calc((100% - 30px) / 2);
+    width: calc((100% - 60px) / 3);
   }
 }
 @media screen and (min-width: 1200px) {
   .gallery-item {
-    width: calc((100% - 90px) / 4);
+    width: calc((100% - 150px) / 6);
   }
 }
 
