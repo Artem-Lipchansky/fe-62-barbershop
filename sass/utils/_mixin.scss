@@ -30,5 +30,19 @@
 
 
 }
+@mixin media($size) {
+    @media screen and (min-width: $size) {
+        @content;
+    }
 
+
+}
+
+@mixin media($count) {
+    width: calc(100% - 30px * $count) {
+        @content;
+    }
+
+
+}
 
