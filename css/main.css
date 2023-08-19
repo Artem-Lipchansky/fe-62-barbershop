@@ -450,11 +450,15 @@ body {
 }
 
 .soc {
-  width: 100px;
-  display: flex;
-  align-items: flex-end;
-  padding-left: 27px;
-  padding-bottom: 40px;
+  display: none;
+}
+@media screen and (min-width: 720px) {
+  .soc {
+    width: 100px;
+    align-items: flex-end;
+    padding-left: 27px;
+    padding-bottom: 40px;
+  }
 }
 
 .soc__list {
