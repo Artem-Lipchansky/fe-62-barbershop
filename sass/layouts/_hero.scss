@@ -1,5 +1,17 @@
 .hero__container {
     display: flex;
+    padding: 0;
+    width: 100%;
+
+    @include tablet{
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 720px;
+    }
+
+    @include desktop {
+        width: 1200px;
+    }
 }
 
 .soc {
@@ -9,7 +21,8 @@
     
     align-items: flex-end;
     padding-left: 27px;
-    padding-bottom: 40px;   
+    padding-bottom: 40px; 
+    display:flex;  
     }
     
 }
@@ -52,7 +65,8 @@
 
 
 .hero__content {
-    padding: 272px 100px 208px 100px;
+    // padding: 272px 100px 208px 100px;
+    padding: 208px  31px;
 
     background-image: linear-gradient(rgba(25, 28, 38, 0.2),
             rgba(25, 28, 38, 0.2)),
@@ -61,6 +75,13 @@
     background-position: center;
     background-size: cover;
     flex-grow: 1;
+    @include tablet {
+        padding: 272px 100px 237px;
+    }
+
+    @include desktop {
+        padding: 272px 100px 208px 100px;
+    }
 }
 
 .hero__top-text {
@@ -77,31 +98,42 @@
 .hero__title {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 72px;
-    line-height: 1.18;
+    // font-size: 72px;
+    // line-height: 1.18;
+    line-height: 1.17;
+    font-size: 40px;
+    font-style: normal;
     letter-spacing: 0.05em;
     color: #ffffff;
     margin-bottom: 20px;
     display: flex;
     align-items: baseline;
+    @include mobile {
+        font-size: 48px;
+    }
 
-    &:hover{
-    &::before {
-            color: green;
-        }
-}
-    &::before {
-            content: '\1F525';
-            font-size: 40px;
-            width: 40px;
-            height: 40px;
-            /* background-image: url(../images/barbers-img-1.jpeg); */
-            background-size: cover;
-        }
+    @include desktop {
+        font-size: 72px;
+        line-height: 1.18;
+    }
 
-                &::after {
-                    content: '!';
-                }
+//     &:hover{
+//     &::before {
+//             color: green;
+//         }
+// }
+    // &::before {
+    //         content: '\1F525';
+    //         font-size: 40px;
+    //         width: 40px;
+    //         height: 40px;
+    //         /* background-image: url(../images/barbers-img-1.jpeg); */
+    //         background-size: cover;
+    //     }
+
+    //             &::after {
+    //                 content: '!';
+    //             }
 }
 
 
@@ -111,9 +143,20 @@
 
 
 .hero__bottom-text {
-    font-size: 18px;
-    line-height: 1.67;
+    // font-size: 18px;
+    // line-height: 1.67;
+
+    font-size: 16px;
+    line-height: 1.62; /* 162.5% */
+
     letter-spacing: 0.02em;
     color: #9da4bd;
-    max-width: 360px;
+    // max-width: 360px;
+    max-width: 321px;
+    @include tablet {
+        max-width: 360px;
+        font-size: 18px;
+            font-size: 18px;
+                 line-height: 1.67;
+    }
 }
