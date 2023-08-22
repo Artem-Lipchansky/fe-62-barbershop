@@ -424,12 +424,38 @@
         <h2 class="visually-hidden">Barber-Gallery</h2>
         <ul class="gallery-list list">
           <li class="gallery-item">
-            <img
-              src="./img/rectangle1.jpg"
-              alt="galery-img"
-              width="270"
-              height="360"
-            />
+            <picture>
+              <!-- <source
+                srcset="./img/rectangle1.jpg 1x, 
+                ./img/rectangle1-2X.jpg 2x"
+                media="(min-width: 1200px)"
+                type="image/webp"
+              /> -->
+              <source
+                srcset="./img/rectangle1.jpg 1x, ./img/rectangle1-2X.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./img/rectangle1-tab.jpg    1x,
+                  ./img/rectangle1-2X-tab.jpg 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./img/rectangle1-mob.jpg    1x,
+                  ./img/rectangle1-2X-mob.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="./img/rectangle1.jpg"
+                alt="galery-img"
+                width="418"
+                height="360"
+              />
+            </picture>
           </li>
           <li class="gallery-item">
             <img
