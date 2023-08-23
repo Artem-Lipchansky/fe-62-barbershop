@@ -18,7 +18,7 @@
 }
 
 .menu {
-    display: flex;
+    display: none;
     gap: 30px;
 }
 
@@ -59,6 +59,21 @@
 
 .header__connect {
     margin-left: auto;
+    display: none;
+}
+
+.header-logo-icon{
+    fill: #ffffff;
+    
+}
+
+.menu-open-btn {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
 }
 
 
