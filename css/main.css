@@ -460,6 +460,12 @@ body {
   margin-left: 40px;
 }
 
+.mob-menu {
+  position: absolute;
+  top: 0;
+  background-color: #ffffff;
+}
+
 .hero__container {
   display: flex;
   padding: 0;
