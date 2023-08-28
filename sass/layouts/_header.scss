@@ -147,6 +147,14 @@
     z-index: 1;
     padding-top: 48px;
     padding-bottom: 48px;
+
+    > .container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: auto;
+    }
 }
 
 .menu-close-btn {
@@ -154,6 +162,22 @@
     background-color: transparent;
     border: none;
     display: block;
+}
+
+.mob-soc {
+    position: relative;
+    padding-left: 100px;
+
+}
+
+.mob-soc::before{
+content: ' ';
+width: 60px;
+height: 1px;
+position: absolute;
+background-color:  #303030;
+left: 0;
+top: 9px;
 }
 
 .mob-menu__item:not(:last-child) {
